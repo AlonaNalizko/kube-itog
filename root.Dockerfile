@@ -4,7 +4,7 @@ FROM golang:1.25.4-alpine AS builder
 
 WORKDIR /app
 
-COPY ./cmd/root-service/main.go .
+COPY ./cmd/root-service/ .
 
 COPY ./go.mod .
 
