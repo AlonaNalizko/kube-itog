@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: root-service
-          image: root-service:latest
+          image: ${APP_IMAGE_OWNER}/${APP_IMAGE_NAME4}:latest
           imagePullPolicy: IfNotPresent
           resources:
             requests:

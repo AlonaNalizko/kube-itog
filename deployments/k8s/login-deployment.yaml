@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: login-service
-          image: login-service:latest
+          image: ${APP_IMAGE_OWNER}/${APP_IMAGE_NAME3}:latest
           imagePullPolicy: IfNotPresent
           resources:
             requests:
