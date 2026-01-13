@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-service-env
+  namespace: sirius
+data:
+  API_APP_NAME: "API"
+  API_BIND_PORT: "7001"

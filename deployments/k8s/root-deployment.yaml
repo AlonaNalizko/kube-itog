@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: root-service
+  namespace: sirius
+spec:
+  selector:
+    matchLabels:
+      app: root-service
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: root-service
+    spec:
+      containers:
+        - name: root-service
+          image: root-service:latest
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              memory: "32Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          envFrom:
+            - configMapRef:
+                name: root-service-env

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: login-service
+  namespace: sirius
+spec:
+  selector:
+    matchLabels:
+      app: login-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: login-service
+    spec:
+      containers:
+        - name: login-service
+          image: login-service:latest
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              memory: "32Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          envFrom:
+            - configMapRef:
+                name: login-service-env
+
