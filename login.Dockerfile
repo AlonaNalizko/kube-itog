@@ -20,6 +20,6 @@ WORKDIR /app
 
 COPY --from=builder /app/login-service .
 
-EXPOSE 5000
+EXPOSE 8080
 
 CMD ["/app/login-service"]

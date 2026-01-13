@@ -20,6 +20,6 @@ WORKDIR /app
 
 COPY --from=builder /app/api-service .
 
-EXPOSE 5000
+EXPOSE 8080
 
 CMD ["/app/api-service"]
