@@ -32,14 +32,14 @@ tasks:
     - kubectl apply -f ./deployments/k8s/config-env-info.yaml
     - kubectl apply -f ./deployments/k8s/config-env-login.yaml
     - kubectl apply -f ./deployments/k8s/config-env-root.yaml
+    - kubectl apply -f ./services/api-service.yaml 
+    - kubectl apply -f ./services/info-service.yaml 
+    - kubectl apply -f ./services/login-service.yaml 
+    - kubectl apply -f ./services/root-service.yaml 
     - kubectl apply -f ./deployments/k8s/api-deployment.yaml
     - kubectl apply -f ./deployments/k8s/info-deployment.yaml
     - kubectl apply -f ./deployments/k8s/login-deployment.yaml
     - kubectl apply -f ./deployments/k8s/root-deployment.yaml
-    - kubectl apply -f ./services/api-service.yaml 
-    - kubectl apply -f ./services/info-services.yaml 
-    - kubectl apply -f ./services/login-services.yaml 
-    - kubectl apply -f ./services/root-service.yaml 
     - kubectl apply -f ./ingress/ingress.yaml
 
   release:
