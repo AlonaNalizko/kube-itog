@@ -5,4 +5,4 @@ metadata:
   namespace: sirius
 data:
   API_APP_NAME: "API"
-  API_BIND_PORT: "8080"
+  API_BIND_PORT: "7001"

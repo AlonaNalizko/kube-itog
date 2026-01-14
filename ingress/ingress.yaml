@@ -17,7 +17,7 @@ spec:
           service:
             name: root-service
             port:
-              number: 8080 
+              number: 80
 
       - path: /api
         pathType: Prefix
@@ -25,7 +25,7 @@ spec:
           service:
             name: api-service
             port:
-              number: 8080
+              number: 80
 
       - path: /info
         pathType: Prefix
@@ -33,7 +33,7 @@ spec:
           service:
             name: info-service
             port:
-              number: 8080
+              number: 80
 
       - path: /login
         pathType: Prefix
@@ -41,5 +41,5 @@ spec:
           service:
             name: login-service
             port:
-              number: 8080 
+              number: 80
       
