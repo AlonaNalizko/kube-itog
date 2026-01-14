@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: root-service
-          image: ${APP_IMAGE_OWNER}/${APP_IMAGE_NAME4}:latest
+          image: alonaka/root-service:latest
           imagePullPolicy: IfNotPresent
           resources:
             requests:

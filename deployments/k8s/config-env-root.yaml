@@ -5,4 +5,4 @@ metadata:
   namespace: sirius
 data:
   ROOT_APP_NAME: "ROOT"
-  ROOT_BIND_PORT: "7059"
+  ROOT_BIND_PORT: "8080"

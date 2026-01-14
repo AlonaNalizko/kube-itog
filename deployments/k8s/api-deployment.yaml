@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-service
-          image: ${APP_IMAGE_OWNER}/${APP_IMAGE_NAME1}:latest
+          image: alonaka/api-service:latest
           imagePullPolicy: IfNotPresent
           resources:
             requests:

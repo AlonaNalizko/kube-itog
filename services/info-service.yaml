@@ -9,5 +9,5 @@
       ports:
         - protocol: TCP
           port: 80
-          targetPort: 7023
+          targetPort: 8080
          

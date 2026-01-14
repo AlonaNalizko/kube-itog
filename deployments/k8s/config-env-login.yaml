@@ -5,4 +5,4 @@ metadata:
   namespace: sirius
 data:
   LOGIN_APP_NAME: "LOGIN"
-  LOGIN_BIND_PORT: "7058"
+  LOGIN_BIND_PORT: "8080"
