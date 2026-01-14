@@ -37,10 +37,10 @@ tasks:
       - kubectl apply -f ./deployments/k8s/info-deployment.yaml
       - kubectl apply -f ./deployments/k8s/login-deployment.yaml
       - kubectl apply -f ./deployments/k8s/root-deployment.yaml
-      - kubectl apply -f ./services/api-services.yaml 
-      - kubectl apply -f ./services/info-services.yaml 
-      - kubectl apply -f ./services/login-services.yaml 
-      - kubectl apply -f ./services/root-services.yaml 
+      - kubectl apply -f ./services/api-service.yaml 
+      - kubectl apply -f ./services/info-service.yaml 
+      - kubectl apply -f ./services/login-service.yaml 
+      - kubectl apply -f ./services/root-service.yaml 
       - kubectl apply -f ./ingress/ingress.yaml
   
   uninstall:
@@ -53,10 +53,10 @@ tasks:
       - kubectl delete -f ./deployments/k8s/info-deployment.yaml
       - kubectl delete -f ./deployments/k8s/login-deployment.yaml
       - kubectl delete -f ./deployments/k8s/root-deployment.yaml
-      - kubectl delete -f ./services/api-services.yaml 
-      - kubectl delete -f ./services/info-services.yaml 
-      - kubectl delete -f ./services/login-services.yaml 
-      - kubectl delete -f ./services/root-services.yaml 
+      - kubectl delete -f ./services/api-service.yaml 
+      - kubectl delete -f ./services/info-service.yaml 
+      - kubectl delete -f ./services/login-service.yaml 
+      - kubectl delete -f ./services/root-service.yaml 
       - kubectl delete -f ./ingress/ingress.yaml
 
   release:
